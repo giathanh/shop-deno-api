@@ -1,10 +1,14 @@
 import { Application } from "oak";
+
 import { APP_HOST, APP_PORT } from "./config.js";
 import router from "./routes.js";
 import _404 from "./controllers/404.js";
 import errorHandler from "./controllers/errorHandler.js";
+import logger from "./utils/logger.js";
 
 const app = new Application();
+
+logger('Hello World');
 
 app.use(errorHandler);
 app.use(router.routes());
