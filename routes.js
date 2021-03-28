@@ -1,4 +1,5 @@
-import { Router } from "https://deno.land/x/oak/mod.ts";
+import { Router } from "oak";
+
 import getBeers from "./controllers/getBeers.js";
 import getBeerDetails from "./controllers/getBeerDetails.js";
 import createBeer from "./controllers/createBeer.js";
